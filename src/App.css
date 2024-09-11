@@ -1,38 +1,94 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.header {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: navy;
+  padding: 1%;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  background-color: aqua;
+}
+/*.box {
+  margin: 20px;
+  margin-left: 45%;
+}*/
+ul li {
+  list-style: none;
+  text-align: center;
+}
+.add-btn {
+  background-color: blue;
+  color: white;
+  
+}
+.add-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #316fc1;
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+  margin-left: 10px;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(11, 10, 10, 0.3);
+  transition: 0.3s;
+}
+.add-btn:active{
+  box-shadow: none;
+}
+.input-box-todo{
+  /*margin-left: 10px;*/
+  width: 20%;
+  height: 45px;
+  border-radius: 14px;
+  border: 1px solid black;
+  padding-left: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  outline: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: large;
+  margin: 20px;
+  margin-left: 35%;
+  
+}
+.item {
+  list-style: none;
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  padding: 3px;
+  padding-left: 5px;
+  border-radius: 5px;
+  width: 30%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 35%;
+ margin-top: 5px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon {
+  position: absolute;
+  right: 10px;
+}
+.icon i {
+  margin: 4px;
+  font-size: large;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.icon i:hover {
+  transform: scale(1.2);
+}
+.icon-delete:hover{
+  color: red;
 }
